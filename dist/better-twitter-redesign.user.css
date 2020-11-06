@@ -17,7 +17,6 @@
   flex-grow: 0; }
 
 [role='banner'] > div:first-child {
-  width: 5.428571429em;
   align-items: center; }
 
 [role='banner'] > div:first-child > div:first-child > div {
@@ -26,30 +25,8 @@
 nav[role='navigation'] > * {
   width: auto; }
 
-/* hide labels */
-nav[role='navigation'] > * > div:first-child > div[dir=auto]:last-child {
-  display: none; }
-
-/* shrink the tweet button */
-a[href='/compose/tweet'][role='button'] {
-  width: 45px;
-  min-width: 0;
-  height: 45px;
-  min-height: 0;
-  padding: 0; }
-
-a[href='/compose/tweet'][role='button'] span {
-  font-size: 90%; }
-
 [role='main'] > div:first-child {
   width: 100%; }
-
-/* account switcher */
-div[data-testid='SideNav_AccountSwitcher_Button'] {
-  padding: 4px; }
-
-div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(3) {
-  display: none; }
 
 /*** MAIN ***/
 /* make it take full space */
@@ -80,6 +57,11 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
   max-width: 100%;
   margin: 0; }
 
+/* remove Who to follow and footer */
+[data-testid='sidebarColumn'] > div:first-child > div:nth-child(2) > div:first-child > div:first-child > div:first-child > div:nth-child(4),
+[data-testid='sidebarColumn'] > div:first-child > div:nth-child(2) > div:first-child > div:first-child > div:first-child > div:nth-child(5){
+  display: none; }  
+
 /*** HOME ***/
 /* make tweets bigger */
 [data-testid='primaryColumn'] > div:first-child > div:last-child {
@@ -89,7 +71,7 @@ div[data-testid='SideNav_AccountSwitcher_Button'] > div:nth-child(2), div[data-t
 
 [data-testid='primaryColumn'] > div:first-child > div:last-child > div:last-child {
   width: 100%;
-  max-width: 900px;
+  max-width: 1150px;
   align-self: center; }
 
 /*** MESSAGES ***/
@@ -127,3 +109,8 @@ section[aria-labelledby='master-header'] > div:last-child > div::-webkit-scrollb
 [data-testid='primaryColumn'] > div:first-child > div:first-child > div:last-child > div:first-child > div:last-child {
   max-width: 100%; }
 }
+
+[data-testid='primaryColumn'] > div:first-child > div:last-child > div:first-child > div:first-child {
+  width: 100%;
+  max-width: 1150px;
+  align-self: center; }
