@@ -6,7 +6,7 @@ _A Userstyle for Twitter to make the Twitter redesign more bearable_
 | :---------------------: | :---------------------: |
 | ![](screenshots/00.png) | ![](screenshots/01.png) |
 
-# [📦 UserCSS file ![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/duncannah/better-twitter-redesign/master/dist/better-twitter-redesign.user.css)
+# [📦 UserCSS file ![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/jarlave/better-twitter-redesign/master/dist/better-twitter-redesign.user.css)
 
 ## Installation
 
